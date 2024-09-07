@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KZTV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card h2 {
+            margin: 15px 0 10px;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        @media(max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KZTV Новостив мире кибер спорта</h1>
+    </header>
+
+    <nav>
+        <a href="#">Главная</a>
+        <a href="about/about.html">О нас</a> <!--Ссылка на новую страницу-->
+        <a href="#">Услуги</a>
+        <a href="#">Контакты</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <div class="card">
+                <img src="image/avg.png" alt="Авангарт логотип">
+                <h2>Главная новость</h2>
+                <h3>Команда <a href="https://avangar.kz/">AVANGAR</a>  распустила состав</h3>
+                <p>Киберспортивная организация AVANGAR объявила о распуске своего состава. Это стало неожиданной новостью для поклонников команды, которая показывала высокие результаты в различных турнирах. Причины такого решения пока остаются неясными, и будущее организации на киберспортивной сцене под вопросом.</p>
+            </div>
+            <div class="card">
+                <img src="image/vp/vp.jpg" alt="Virtus.pro логотип"width="400" height="400">
+                <h2>PASHANOJ — новый тренер Virtus.pro в CS2</h2>
+                 
+                	<a href="https://virtus.pro/articles/pashanoj-novyi-trener-virtuspro-v-cs2">Virtus.pro</a>
+                	<p>сообщают об изменениях в составе тренерского штаба нашей 
+                	 командe  в дисциплине CS2.
+                     Главным тренером ростера назначен Павел «PASHANOJ» Легостаев, ранее работавший с командой в качестве аналитика.
+
+                     Решение о переводе в запас Андрея «XomA» Мироненко, ранее занимавшего пост главного тренера, было принято после детального обсуждения с игроками команды.
+
+                     Николай Петросян, CEO Virtus.pro:
+
+                     «XomA — талантливый тренер с глубоким пониманием игры. Мы искренне благодарим его за работу и преданность делу. В настоящее время руководство Virtus.pro совместно с Андреем заняты поисками наилучшего варианта для продолжения его карьеры.
+
+                     ейчас клубу необходимо сосредоточиться на актуальных задачах, стоящих перед составом по CS2, поэтому мы воздержимся от дополнительных комментариев по этой ситуации».
+
+                     Virtus.pro также приступят к поиску нового аналитика состава по CS2, позиция которого пока остается вакантной.
+
+                     PASHANOJ уже приступил к своим новым обязанностям главного тренера.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>KZTV News &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
